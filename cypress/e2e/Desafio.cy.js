@@ -350,7 +350,7 @@ describe('Desafio', () => {
         cy.get('.col-md-12 > .alert-success')
         .should('be.visible')
     });
-    it('Test Case 22: ', () => {
+    it('Test Case 22: Adicionar do Recomendado ao Carinho ', () => {
         cy.scrollTo(0,7500)
 
         cy.get('.recommended_items > .title')
@@ -362,7 +362,7 @@ describe('Desafio', () => {
         cy.get('.active > :nth-child(2) > .product-image-wrapper > .single-products > .productinfo > .btn')
         .click()
     });
-    it('Teste Case 23: ', () => {
+    it('Teste Case 23: Verificar Detalhes do Endereço ', () => {
         cy.contains(' Signup / Login')
         .click()
         
@@ -397,7 +397,7 @@ describe('Desafio', () => {
         cy.contains('Continue')
         .click()
     });
-    it('Test Case 24:', () => {
+    it('Test Case 24: Baixar Invoice Depois da Compra', () => {
         adicionarProdutoCart()
 
         cy.get('.col-sm-6 > .btn')
@@ -419,7 +419,7 @@ describe('Desafio', () => {
         cy.contains('Continue')
         .click()
     });
-    it('Test Case 25: ', () => { 
+    it('Test Case 25: Verificar o Scrool de Descer e Subir na Página (Com a Seta)', () => { 
         cy.scrollTo('bottom')
 
         cy.get('.single-widget > h2')
@@ -431,7 +431,7 @@ describe('Desafio', () => {
         cy.contains('Full-Fledged practice website for Automation Engineers')
         .should('be.visible')
     });
-    it('Teste Case 26: ', () => {
+    it('Teste Case 26:Verificar o Scrool de Descer e Subir na Página (Sem a Seta) ', () => {
         cy.scrollTo('bottom')
 
         cy.get('.single-widget > h2')
